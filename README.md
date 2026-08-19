@@ -27,69 +27,98 @@ This home lab showcases the end-to-end deployment, configuration, and administra
 ### 1. Server Manager Role Overview
 Displays healthy status across all primary infrastructure roles managed on the Domain Controller.
 
-[Drag and drop Server Manager Dashboard image here]
+<img width="1365" height="817" alt="image" src="https://github.com/user-attachments/assets/8a96ed0f-ac6e-4076-8a88-c95461478147" />
+<img width="1232" height="762" alt="image" src="https://github.com/user-attachments/assets/fef9d147-660e-4b4a-b694-98240e30bff7" />
+
+
 
 ---
 
 ### 2. Dual Network Adapter Provisioning
 Configured dual virtual network adapters to separate external internet connectivity from the internal VirtualBox lab network (`intnet`).
 
-[Drag and drop Network Connections image here]
+<img width="741" height="480" alt="image" src="https://github.com/user-attachments/assets/279c6c85-2018-4a27-86e0-7c610217db29" />
+
 
 ---
 
 ### 3. External Network Adapter IPv4 Configuration (`_INTERNET_`)
 Configured WAN interface via DHCP for external internet connectivity while binding local host DNS resolution (`127.0.0.1`) to the active Domain Controller.
 
-[Drag and drop Internet NIC IPv4 Settings image here]
+<img width="528" height="477" alt="image" src="https://github.com/user-attachments/assets/ef5cda67-d2f1-4a57-8814-1030ec61f639" />
+
 
 ---
 
 ### 4. Internal LAN Adapter IPv4 Configuration (`X_internal_X`)
 Assigned static IP parameters (`172.16.0.1/24`) on the internal interface to act as the primary gateway and local DNS server for all domain endpoints.
 
-[Drag and drop Internal NIC IPv4 Settings image here]
+<img width="537" height="555" alt="image" src="https://github.com/user-attachments/assets/06d37743-882e-4c25-9e3a-f536647f5c47" />
+
 
 ---
 
 ## Server Roles & Implementation Proof
 
-### 5. Domain Name System (DNS) Setup
+### 5. Local Server Properties & Domain Binding
+Displays the Domain Controller (`DC`) configuration, confirming integration with `mydomain.com` alongside both configured IP network interfaces.
+
+<img width="1270" height="732" alt="image" src="https://github.com/user-attachments/assets/94ae84e5-db0e-4420-b4ea-1499454149fb" />
+
+---
+
+### 6. Managed Server Infrastructure Inventory
+Shows central server inventory in Server Manager with active status reporting across both external and internal IPv4 network addresses.
+
+<img width="1264" height="710" alt="image" src="https://github.com/user-attachments/assets/34ff52e6-eade-4941-aec7-a0a7f6871484" />
+
+---
+
+### 7. Active Directory Domain Services (AD DS) Operations
+Displays active domain controller status and Directory Service operational logs for domain management.
+
+<img width="1163" height="718" alt="image" src="https://github.com/user-attachments/assets/d56189e2-6475-4bbf-8d9c-652fe8134794" />
+
+---
+
+### 8. Domain Name System (DNS) Setup
 Configured internal DNS zones for local Active Directory name resolution and domain lookup across the network.
 
 <img width="1292" height="756" alt="77288a32-b084-46fc-9a56-242310adacd9" src="https://github.com/user-attachments/assets/2a132b89-555c-4e8c-90c2-b4eb8bfb64f7" />
 
 ---
 
-### 6. File and Storage Services
+### 9. File and Storage Services
 Initialized local volume and file storage services to prepare the environment for domain file shares and administrative storage.
 
 <img width="1175" height="705" alt="image" src="https://github.com/user-attachments/assets/fa8490c4-83fd-4491-bc1d-a4d7fa4e92f2" />
 
 ---
 
-### 7. Internet Information Services (IIS) Setup
+### 10. Internet Information Services (IIS) Setup
 Installed and configured the web server role to enable local intranet applications and simulate corporate web hosting.
 
-[Drag and drop IIS Setup image here]
+<img width="1159" height="723" alt="image" src="https://github.com/user-attachments/assets/a35d5425-c286-4c1c-b2c1-f04b3f6a9e4f" />
+
 
 ---
 
-### 8. Remote Access & Routing (NAT) Setup
+### 11. Remote Access & Routing (NAT) Setup
 Configured Remote Access routing and Network Address Translation (NAT) to allow isolated internal domain clients (`172.16.0.0/24`) to securely route traffic to the external interface.
 
-[Drag and drop Remote Access image here]
+<img width="1172" height="704" alt="image" src="https://github.com/user-attachments/assets/a860ddf8-75f3-43ff-a66c-db863ce75a36" />
+
 
 ---
 
-### 9. Active DHCP Scope Leases
+### 12. Active DHCP Scope Leases
 Verified that the Windows Server 2022 DHCP service dynamically leased IP address `172.16.0.100` to `CLIENT1.mydomain.com` over the internal network.
 
 [Drag and drop DHCP Leases image here]
 
 ---
 
-### 10. Active Directory Computer Integration
+### 13. Active Directory Computer Integration
 Confirmed successful domain joining in Active Directory Users and Computers (ADUC), where `CLIENT1` is registered as a trusted computer object under `mydomain.com`.
 
 [Drag and drop ADUC Computer Object image here]
