@@ -121,6 +121,13 @@ Confirmed successful domain joining in Active Directory Users and Computers (ADU
 
 ## Automated User Provisioning & PowerShell Scripts
 
+### Repository Files
+* **User Creation Script:** [`1_CREATE_USERS.ps1`](AD_PS-master/1_CREATE_USERS.ps1)
+* **Name Generator Script:** [`Generate-Names-Create-Users.ps1`](AD_PS-master/Generate-Names-Create-Users.ps1)
+* **User Input List:** [`names.txt`](AD_PS-master/names.txt)
+
+---
+
 ### 14. User Creation Script Execution (`1_CREATE_USERS.ps1`)
 Automated the mass creation of Active Directory user accounts using PowerShell. The script reads full names from an external text file (`names.txt`), extracts the first initial and last name to generate standardized SAM account usernames, assigns a default credentials password (`Password1`), and provisions accounts directly into Active Directory.
 
