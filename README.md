@@ -80,6 +80,8 @@ Displays active domain controller status and Directory Service operational logs 
 ### 8. Domain Name System (DNS) Setup
 Configured internal DNS zones for local Active Directory name resolution and domain lookup across the network.
 
+<img width="564" height="347" alt="image" src="https://github.com/user-attachments/assets/816111f8-18cc-451f-b7a1-15bd9a512c8e" />
+
 <img width="1292" height="756" alt="77288a32-b084-46fc-9a56-242310adacd9" src="https://github.com/user-attachments/assets/2a132b89-555c-4e8c-90c2-b4eb8bfb64f7" />
 
 ---
