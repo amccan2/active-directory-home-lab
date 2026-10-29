@@ -82,8 +82,6 @@ Configured internal DNS zones for local Active Directory name resolution and dom
 
 <img width="564" height="347" alt="image" src="https://github.com/user-attachments/assets/816111f8-18cc-451f-b7a1-15bd9a512c8e" />
 
-<img width="1292" height="756" alt="77288a32-b084-46fc-9a56-242310adacd9" src="https://github.com/user-attachments/assets/2a132b89-555c-4e8c-90c2-b4eb8bfb64f7" />
-
 ---
 
 ### 9. File and Storage Services
